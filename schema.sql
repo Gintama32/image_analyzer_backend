@@ -1,0 +1,15 @@
+-- Create users table
+CREATE TABLE users (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    email TEXT UNIQUE NOT NULL,
+    entries BIGINT DEFAULT 0,
+    joined TIMESTAMP NOT NULL
+);
+
+-- Create login table
+CREATE TABLE login (
+    id SERIAL PRIMARY KEY,
+    hash VARCHAR(100) NOT NULL,
+    email TEXT UNIQUE NOT NULL
+);
