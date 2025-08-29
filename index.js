@@ -1,6 +1,4 @@
 // 🔹 Must be first to force IPv4 resolution
-import dns from "dns";
-dns.setDefaultResultOrder("ipv4first");
 
 import dotenv from "dotenv";
 dotenv.config();
